@@ -1,0 +1,50 @@
+.input-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-container input{
+    border-width: 0px;
+    all: unset;
+    background-color: var(--subBgColor);
+    width: 40em;
+    height: 3em;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid var(--darkPurple);
+    box-shadow: inset 0px 0px 25px -11px rgba(0,0,0,0.75);
+}
+
+.input-container input[type="text"]{
+    padding: 0;
+    margin:0;
+}
+.input-container input::placeholder{
+    color: var(--subTitle);
+    opacity: 0.5;
+}
+
+.input-container button{
+    width: 3em;
+    height: 3.6em;
+    position: absolute;
+    right: 0px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: var(--darkPurple);
+    transition: 0.5s;
+}
+.input-container button:hover{
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+.input-container button:hover .input-container{
+    border: 2px solid #ffff;
+}
+
+.plus-icon{
+    color: var(--Title);
+}
+

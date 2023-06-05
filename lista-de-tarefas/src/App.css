@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --bgColor: #121214;
+  --subBgColor:#2A2634;
+  --Title: #e1e1e1;
+  --subTitle: #a1a1aa;
+  --purple:#6e4ada;
+  --darkPurple:#3e34c7;
+  
+  font-family: 'Inter', sans-serif;
+  line-height: 160%;
+  background-color: var(--bgColor);
+  color: var(--Title);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  height: 97vh;
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+
+.tasks-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4em;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  min-height: 150px;
+}
+
+.tasks-container::-webkit-scrollbar 
+{ width: 0 !important 
+}
+

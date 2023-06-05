@@ -1,0 +1,46 @@
+.task-card{
+    width: 40em;
+    height: 5em;
+    border-radius: 8px;
+    color: var(--Title);
+    background-image: linear-gradient(90deg, #6e4ada 0%, #3e34c7 50.52%, #6e4ada 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+.task-card div{
+    background-color: var(--subBgColor);
+    padding: 20px 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-card h1{
+    justify-self: flex-start;
+    justify-items: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.task-card button{
+    all: unset;
+    cursor: pointer;
+}
+.trash-icon{
+   scale: 1.4;
+   color: var(--subTitle);
+   transition: 1s;
+}
+.trash-icon:hover{
+    color: rgba(233, 18, 18, 0.827);
+    transition: 1s;
+    scale: 1.6;
+ }
+
